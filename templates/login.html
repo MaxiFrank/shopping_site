@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+
+<form class="form-signin" method="POST">
+  <!-- the post method, once rendered, is saved (in browser memory now) -->
+
+  <h2 class="form-signin-heading">Please Sign In</h2>
+
+  <div class="form-group">
+    <label for="email-field" class="sr-only">Email Address</label>
+    <input type="email"
+           name="email"
+           class="form-control input-lg"
+           placeholder="Email Address"
+           required
+           autofocus>
+  </div>
+
+  <div class="form-group">
+    <label for="password-field" class="sr-only">Password</label>
+    <input type="password"
+           name="password"
+           class="form-control input-lg"
+           placeholder="Password"
+           required>
+  </div>
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In
+    <!-- if I don't specify route with the action attribute, the default is that it goes back to the /login url in this case -->
+  </button>
+
+</form>
+
+</body>
+</html>
+
